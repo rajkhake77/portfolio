@@ -24,9 +24,9 @@ const Hero = () => {
         <div
           className={cn(
             "absolute inset-0",
-            "[background-size:40px_40px]",``
-            "[background-image:linear-gradient(to_right,#e4e4e7_1px,transparent_1px),linear-gradient(to_bottom,#e4e4e7_1px,transparent_1px)]",
-            "dark:[background-image:linear-gradient(to_right,#262626_1px,transparent_1px),linear-gradient(to_bottom,#262626_1px,transparent_1px)]"
+            "[background-size:40px_40px]",
+            "[background-image:linear-gradient(to_right,#e4e4e7_1px,transparent_1px)_linear-gradient(to_bottom,#e4e4e7_1px,transparent_1px)]",
+            "dark:[background-image:linear-gradient(to_right,#262626_1px,transparent_1px)_linear-gradient(to_bottom,#262626_1px,transparent_1px)]"
           )}
         />
         {/* Radial gradient for the container to give a faded look */}
@@ -35,7 +35,7 @@ const Hero = () => {
       <div className="flex justify-center relative my-20 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
           <h2 className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
-            RAJ'S PORTFOLIO 
+            RAJ'S PORTFOLIO
           </h2>
           <TextGenerateEffect
             className="text-center text-[35px] md:text-4xl lg:text-5xl font-bold"
@@ -45,10 +45,10 @@ const Hero = () => {
             Hi! I am Raj K. A Modern Fullstack Web Developer.
           </p>
           <a href="#projects">
-            <MagicButton 
-            title="Show my work" 
-            icon={<FaLocationArrow/>}
-            position="right"
+            <MagicButton
+              title="Show my work"
+              icon={<FaLocationArrow />}
+              position="right"
             />
           </a>
         </div>
