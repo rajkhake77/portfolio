@@ -1,7 +1,7 @@
 "use client";
 
 import { FaLocationArrow } from "react-icons/fa6";
-
+import Image from "next/image";
 import { projects } from "@/data";
 import { PinContainer } from "./ui/3d-pin";
 
@@ -19,17 +19,25 @@ const RecentProjects = () => {
             key={item.id}
           >
             <PinContainer title={item.pinTitle} href={item.href}>
-              <div className="relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden sm:h-[40vh] h-[30vh] mb-10">
+              <div className="relative sm:w-[570px] w-[80vw] overflow-hidden sm:h-[40vh] h-[30vh]">
                 <div
-                  className="relative w-full h-full overflow-hidden lg:rounded-3xl"
+                  className="absolute inset-0 w-full h-full overflow-hidden lg:rounded-3xl"
                   style={{ backgroundColor: "#13162D" }}
                 >
-                  <img src="/bg.png" alt="bgimg" />
+                  <Image
+                    src="/bg.png"
+                    alt="bgimg"
+                    fill
+                    className="object-cover"
+                    priority
+                  />
                 </div>
-                <img
+                <Image
                   src={item.img}
                   alt="cover"
-                  className="z-10 absolute bottom-0"
+                  fill// adjust to your expected height
+                  className="z-10 object-cover"
+                  priority
                 />
               </div>
 

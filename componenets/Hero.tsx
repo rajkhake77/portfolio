@@ -7,7 +7,7 @@ import { FaLocationArrow } from "react-icons/fa";
 
 const Hero = () => {
   return (
-    <div className="pb-20 pt-36">
+    <div className="pb-20 pt-20">
       <div>
         <Spotlight
           className="top-40 -left-10 md:-left-32 md:top-20 h-screen"
@@ -24,9 +24,10 @@ const Hero = () => {
         <div
           className={cn(
             "absolute inset-0",
+            "bg-grid-black-100 border-white/20", // grid with black 100 stroke color
+            "dark:bg-grid-white-100", // dark mode grid with white 100 stroke color
             "[background-size:40px_40px]",
-            "[background-image:linear-gradient(to_right,#e4e4e7_1px,transparent_1px)_linear-gradient(to_bottom,#e4e4e7_1px,transparent_1px)]",
-            "dark:[background-image:linear-gradient(to_right,#262626_1px,transparent_1px)_linear-gradient(to_bottom,#262626_1px,transparent_1px)]"
+            "opacity-40"
           )}
         />
         {/* Radial gradient for the container to give a faded look */}
