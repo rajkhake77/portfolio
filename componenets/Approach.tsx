@@ -6,12 +6,12 @@ import { CanvasRevealEffect } from "@/componenets/ui/CanvasRevealEffect";
 
 const Approach = () => {
   return (
-    <section className="w-fill py-20 hidden sm:block">
+    <section className="w-full py-20 hidden sm:block">
       <h1 className="text-center text-[30px] md:text-3xl lg:text-4xl font-bold">
         My
         <span className="text-purple-300"> Approach </span>
       </h1>
-      <div className="my-20 flex flex-col lg:flex-row items-center justify-center gap-4 ">
+      <div className="my-20 flex flex-col lg:flex-row flex-wrap items-center justify-center gap-4 ">
         <Card
           title="Planning & Strategy"
           icon={<AceternityIcon order="Phase 1" />}
@@ -72,7 +72,7 @@ const Card = ({
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       onClick={() => setHovered(!hovered)}
-      className="border border-black/[0.2] group/canvas-card flex items-center justify-center dark:border-white/[0.2]  max-w-sm w-full lg:h-[35rem] rounded-3xl mx-auto p-4 relative"
+      className="border border-black/[0.2] group/canvas-card flex items-center justify-center dark:border-white/[0.2]  max-w-sm w-full lg:h-[35rem] overflow-hidden rounded-3xl mx-auto p-4 relative"
     >
       <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-black" />
       <Icon className="absolute h-6 w-6 -bottom-3 -left-3 dark:text-white text-black" />

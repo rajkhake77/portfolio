@@ -158,7 +158,7 @@ export const workExperience = [
     id: 2,
     title: "Web Development Intern", 
      company: "Adivid Technologies | Jan 2023 – May 2023",
-    desc: "Strengthened core full-stack development skills and applied problem-solving in real-world scenari",
+    desc: "Strengthened core full-stack development skills and applied problem-solving in real-world scenario",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp2.svg",
   },

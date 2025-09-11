@@ -7,7 +7,7 @@ import { PinContainer } from "./ui/3d-pin";
 
 const RecentProjects = () => {
   return (
-    <div className="py-20" id="projects">
+    <div className="py-20 overflow-x-hidden" id="projects">
       <h1 className="text-center text-[30px] md:text-3xl lg:text-4xl font-bold">
         A small selection of my{" "}
         <span className="text-purple-300">recent projects</span>
@@ -19,7 +19,7 @@ const RecentProjects = () => {
             key={item.id}
           >
             <PinContainer title={item.pinTitle} href={item.href}>
-              <div className="relative sm:w-[570px] w-[80vw] overflow-hidden sm:h-[40vh] h-[30vh]">
+              <div className="relative sm:w-[570px] w-[80vw] overflow-hidden rounded-2xl sm:h-[40vh] h-[30vh]">
                 <div
                   className="absolute inset-0 w-full h-full overflow-hidden lg:rounded-3xl"
                   style={{ backgroundColor: "#13162D" }}
@@ -41,7 +41,7 @@ const RecentProjects = () => {
                 />
               </div>
 
-              <h1 className="font-bold lg:text-xl md:text-xl text-base line-clamp-1">
+              <h1 className="font-bold lg:text-xl md:text-xl text-base line-clamp-1 mt-4">
                 {item.title}
               </h1>
 
